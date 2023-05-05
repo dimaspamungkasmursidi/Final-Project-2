@@ -871,6 +871,15 @@ nav {
 .input-newsletter:focus {
   border: 2px solid #234cad;
 }
+::placeholder {
+  color: #234cad;
+}
+:-ms-input-placeholder {
+  color: #234cad;
+}
+::-ms-input-placeholder {
+  color: #234cad;
+}
 label {
   position: relative;
 }
