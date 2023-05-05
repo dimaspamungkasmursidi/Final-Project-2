@@ -1,0 +1,978 @@
+/* GENERAL STYLES */
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Nunito", sans-serif;
+  background-color: #ffffff;
+}
+/* END OF GENERAL STYLES */
+
+/* NAVBAR CSS */
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #234cad;
+  font-size: 100%;
+  font-weight: 600;
+}
+a:hover {
+  color: #234cad;
+}
+ul:hover li a:not(:hover) {
+  color: rgb(0, 0, 0);
+  opacity: 0.3;
+  filter: blur(1px);
+}
+nav {
+  position: relative;
+  padding: 2rem 5rem;
+}
+.navbar {
+  width: 100%;
+  height: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ul-navbar {
+  display: flex;
+  gap: 2.5rem;
+}
+.bar-nav {
+  font-size: 1rem;
+  padding: 10px;
+  padding-left: 14px;
+  padding-right: 14px;
+  border-radius: 100%;
+  background: #f2f6ff;
+  color: #234cad;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.bar-nav:hover {
+  color: #f2f6ff;
+  background-color: #234cad;
+}
+.button-login {
+  padding: 0.6rem 1.3rem;
+  background-color: transparent;
+  border: 2px solid #234cad;
+  font-size: 100%;
+  font-weight: 600;
+  color: #234cad;
+  line-height: 1;
+  border-radius: 25px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.button-login:hover {
+  color: #f2f6ff;
+  background-color: #234cad;
+}
+.button-signup {
+  padding: 0.6rem 1.3rem;
+  background-color: #f2f6ff;
+  border: 2px solid #f2f6ff;
+  font-size: 100%;
+  font-weight: 600;
+  color: #234cad;
+  line-height: 1;
+  border-radius: 25px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.button-signup:hover {
+  background-color: transparent;
+  border: 2px solid #f2f6ff;
+}
+/* END OF NAVBAR CSS */
+/* -------------------------------------------------------------------- */
+/* jUMBOTRON CSS */
+.section-jt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.div-jt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3rem;
+  max-width: 100%;
+  width: 87%;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #f2f6ff;
+}
+.desc-jt {
+  align-items: center;
+}
+.h1-jt {
+  font-size: 42px;
+  line-height: 45px;
+  max-width: 280px;
+  margin-bottom: 1.5rem;
+  color: #234cad;
+}
+.paraf-jt {
+  font-size: 13px;
+  margin-bottom: 2.5rem;
+  color: #234cad;
+}
+.button-jt {
+  padding: 1rem 2.5rem;
+  background-color: transparent;
+  border: 2px solid #234cad;
+  font-size: 100%;
+  font-weight: 600;
+  color: #234cad;
+  line-height: 1;
+  border-radius: 25px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.button-jt:hover {
+  color: #f2f6ff;
+  background-color: #234cad;
+}
+.p-desc-card {
+  font-size: 11px;
+}
+
+/* Card Jumbotron 1 */
+.card-jt-1 {
+  margin-left: 5rem;
+}
+
+.card-up {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #234cad;
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 18px;
+  margin-bottom: 1.5rem;
+}
+.icon-up {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  font-size: 25px;
+  border-right: solid 2px #234cad;
+  border-top: solid 2px #234cad;
+  border-radius: 50%;
+  background-color: #f2f6ff;
+}
+.div-desc-card-up {
+  margin-left: 10px;
+}
+
+.card-date {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #234cad;
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 18px;
+  margin-bottom: 1.5rem;
+}
+.icon-date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  font-size: 25px;
+  border: solid 2px #234cad;
+  border-radius: 50%;
+  background-color: #f2f6ff;
+}
+.div-desc-card-date {
+  margin-left: 10px;
+}
+.circle-date {
+  display: flex;
+  margin-top: 10px;
+}
+.circle-date-bottom {
+  border: solid 2px white;
+  display: flex;
+  font-weight: bold;
+  background-color: #f2f6ff;
+  border-radius: 50%;
+  padding: 9px;
+}
+.circle-date-bottom-child {
+  border: solid 2px white;
+  display: flex;
+  font-weight: bold;
+  background-color: #f2f6ff;
+  border-radius: 50%;
+  padding: 8px;
+  margin-left: -5px;
+}
+
+.card-saved {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #234cad;
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 18px;
+}
+.icon-saved {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  font-size: 25px;
+  border-radius: 50%;
+  background-color: #f2f6ff;
+}
+.div-desc-card-saved {
+  margin-left: 10px;
+}
+
+/* Card Jumbotron 1 */
+.card-jt-2 {
+  margin-left: 1.5rem;
+}
+
+.card-ab {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #234cad;
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 18px;
+  margin-bottom: 1.5rem;
+}
+.icon-ab {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  border-radius: 50%;
+  background-color: #f2f6ff;
+}
+.span-title {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-size: 8px;
+  color: #ffffff;
+  background-color: #234cad;
+  border-radius: 100px;
+  padding: 2px 5px 2px 5px;
+}
+.div-desc-card-ab {
+  margin-left: 10px;
+}
+.hour-1 {
+  margin-top: -20px;
+  margin-left: 25px;
+}
+.p-hour {
+  font-size: 8px;
+}
+
+.card-js {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #234cad;
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 18px;
+  margin-bottom: 1.5rem;
+}
+.icon-js {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  border-radius: 50%;
+  background-color: #f2f6ff;
+}
+.div-desc-card-js {
+  margin-left: 10px;
+}
+.hour-2 {
+  margin-top: -20px;
+}
+.p-hour {
+  font-size: 8px;
+}
+
+.card-up-2 {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  color: #234cad;
+  background-color: #ffffff;
+  border-radius: 15px;
+  max-width: auto;
+  padding: 30px;
+}
+.icon-up-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  font-size: 25px;
+  border-bottom: solid 2px;
+  border-right: solid 2px;
+  border-radius: 50%;
+  background-color: #f2f6ff;
+  margin-bottom: 10px;
+}
+.p-desc-icon-up {
+  font-size: 9px;
+}
+
+.card-icon-copy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #234cad;
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 12px;
+  margin-bottom: 10px;
+}
+.icon-copy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  font-size: 35px;
+  border-radius: 50%;
+}
+.card-up-copy {
+  display: flex;
+  align-items: center;
+}
+
+.card-icon-comment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #234cad;
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 12px;
+}
+.icon-comment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  font-size: 35px;
+  border-radius: 50%;
+}
+.card-up-comment {
+  display: flex;
+  align-items: center;
+}
+.both-of-card {
+  margin-left: 25px;
+}
+/* END OF JUMBOTORN CSS */
+/* -------------------------------------------------------------------- */
+/* TWO ICON CSS */
+.two-icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 100%;
+  margin-top: 70px;
+  padding: 0px 62px 0px 62px;
+}
+.cloud {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #234cad;
+  border-radius: 15px;
+  padding: 18px;
+}
+.icon-cloud {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  font-size: 50px;
+  border-radius: 50%;
+  background-color: #f2f6ff;
+  padding: 42px;
+}
+.desc-cloud {
+  margin-left: 10px;
+}
+.h3-cloud {
+  font-size: 25px;
+}
+.p-cloud {
+  font-size: 19px;
+}
+
+.secured {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #234cad;
+  border-radius: 15px;
+  padding: 18px;
+}
+.icon-secured {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  font-size: 50px;
+  border-radius: 50%;
+  background-color: #f2f6ff;
+  padding: 42px;
+}
+.desc-secured {
+  margin-left: 10px;
+}
+.h3-secured {
+  font-size: 25px;
+}
+.p-secured {
+  font-size: 19px;
+}
+/* END OF TWO ICON */
+/* -------------------------------------------------------------------- */
+/* FEATURES CSS */
+.section-features {
+  margin-bottom: 5rem;
+}
+/* END OF FEATURES CSS */
+/* FEATURE 1 CSS */
+.feature-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.div-feature-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3rem;
+  max-width: 100%;
+  width: 45%;
+  padding: 5rem 1rem 5rem 1rem;
+  background-color: #f2f6ff;
+}
+.all-card .card-aj {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.all-card .card-dl {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.all-card .card-mc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Chat 1 Feature */
+.position-chat-1 {
+  padding: 0px 80px 0px 80px;
+}
+.card-aj {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #234cad;
+  background-color: #ffffff;
+  border-radius: 25px;
+  margin-bottom: 1.5rem;
+  padding: 25px 0px 25px 0px;
+}
+.icon-aj {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  font-size: 20px;
+  border-radius: 50%;
+  background-color: #f2f6ff;
+}
+.span-title {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-size: 8px;
+  color: #ffffff;
+  background-color: #234cad;
+  border-radius: 100px;
+  padding: 2px 5px 2px 5px;
+}
+.div-desc-card-aj {
+  font-size: 15px;
+  margin-left: 18px;
+}
+.p-desc-chat-1 {
+  font-size: 13px;
+}
+.chat-1 {
+  margin-top: -20px;
+}
+.p-chat-1 {
+  font-size: 10px;
+}
+/* Chat 2 Feature */
+.position-chat-2 {
+  padding: 0px 110px 0px 110px;
+  opacity: 75%;
+}
+.card-dl {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #234cad;
+  background-color: #ffffff;
+  border-radius: 25px;
+  margin-bottom: 1.5rem;
+  padding: 20px 0px 20px 0px;
+}
+.icon-dl {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  font-size: 18px;
+  border-radius: 50%;
+  background-color: #f2f6ff;
+}
+.span-title {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-size: 8px;
+  color: #ffffff;
+  background-color: #234cad;
+  border-radius: 100px;
+  padding: 2px 5px 2px 5px;
+}
+.div-desc-card-dl {
+  font-size: 15px;
+  margin-left: 10px;
+}
+.chat-2 {
+  margin-top: -20px;
+}
+.p-chat-2 {
+  font-size: 8px;
+}
+/* Chat 3 Feature */
+.position-chat-3 {
+  opacity: 50%;
+  padding: 0px 140px 0px 140px;
+}
+.card-mc {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #234cad;
+  background-color: #ffffff;
+  border-radius: 20px;
+  max-width: 300px;
+  padding: 10px 20px 10px 20px;
+}
+.icon-mc {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  font-size: 12px;
+  border-radius: 50%;
+  background-color: #f2f6ff;
+}
+.span-title {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-size: 8px;
+  color: #ffffff;
+  background-color: #234cad;
+  border-radius: 100px;
+  padding: 2px 5px 2px 5px;
+}
+.div-desc-card-mc {
+  font-size: 11px;
+  margin-left: 10px;
+}
+.p-desc-chat-3 {
+  font-size: 8px;
+}
+.chat-3 {
+  margin-top: -20px;
+}
+.p-chat-3 {
+  font-size: 6px;
+}
+
+/* Desc Feature 1 */
+.desc-feature-1 {
+  color: #234cad;
+  font-size: 29px;
+  margin-left: 5.5rem;
+}
+.h1-desc-feature-1 {
+  line-height: 3rem;
+  margin-bottom: 1.5rem;
+}
+.p-desc-feature-1 {
+  font-size: 14px;
+  margin-bottom: 3rem;
+}
+.button-feature-1 {
+  padding: 1rem 2.5rem;
+  background-color: transparent;
+  border: 2px solid #234cad;
+  font-size: 18px;
+  font-weight: 600;
+  color: #234cad;
+  line-height: 1;
+  border-radius: 25px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.button-feature-1:hover {
+  color: #f2f6ff;
+  background-color: #234cad;
+}
+/* END OF FEATURE 1 CSS */
+/* -------------------------------------------------------------------- */
+/* FEATURE 2 CSS */
+.feature-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+/* END OF FEATURE 2 CSS */
+
+/* INFO FEATURES CSS */
+.info-features {
+  text-align: center;
+  margin-bottom: 5rem;
+  color: #234cad;
+}
+.info-features .h1-info-features {
+  font-size: 41px;
+  margin-bottom: 15px;
+}
+/* END OF INFO FEATURES CSS */
+/* -------------------------------------------------------------------- */
+/* ABOUT & PRICING CSS */
+/* About CSS */
+.info-about {
+  text-align: center;
+  margin-bottom: 5rem;
+  color: #234cad;
+  font-size: 41px;
+}
+.h1-info-about {
+  font-size: 41px;
+  margin-bottom: 15px;
+}
+.card-about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 350px;
+}
+.desc-about {
+  color: #234cad;
+  font-size: 21px;
+  margin-right: 5.5rem;
+}
+.h1-desc-about {
+  color: #234cad;
+  font-size: 42px;
+  line-height: 3rem;
+}
+.card-about-1 {
+  margin-right: 0.7rem;
+}
+.card-about-2 {
+  margin-left: 0.7rem;
+}
+.card-about-three {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #234cad;
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 18px;
+}
+/* End of About CSS */
+
+/* Card Pricing CSS */
+.pricing {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #234cad;
+  margin-bottom: 5rem;
+}
+.card-pricing-1 {
+  text-align: center;
+  padding: 3rem 4rem;
+  border-radius: 50px;
+  background-color: #f2f6ff;
+}
+.card-pricing-2 {
+  text-align: center;
+  padding: 3rem 4rem;
+  border-radius: 50px;
+  background-color: transparent;
+  border: 3.5px solid #234cad;
+}
+.basic {
+  font-size: 22px;
+  padding-bottom: 20px;
+}
+.dollar {
+  font-size: 50px;
+  padding-bottom: 4px;
+}
+.per {
+  font-size: 17px;
+  padding-bottom: 30px;
+}
+
+.btn-pricing-1 {
+  padding: 1.2rem 3rem;
+  background-color: #ffffff;
+  border: 2px solid #ffffff;
+  font-size: 21px;
+  font-weight: 600;
+  color: #234cad;
+  line-height: 1;
+  border-radius: 50px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn-pricing-2 {
+  padding: 1.2rem 3rem;
+  background-color: transparent;
+  border: 3.5px solid #234cad;
+  font-size: 21px;
+  font-weight: 600;
+  color: #234cad;
+  line-height: 1;
+  border-radius: 50px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn-pricing-1:hover {
+  color: #f2f6ff;
+  background-color: #234cad;
+}
+.btn-pricing-2:hover {
+  color: #234cad;
+  background-color: #f2f6ff;
+}
+/* End of Card Pricing CSS */
+/* END OF ABOUT & PRICING CSS */
+/* -------------------------------------------------------------------- */
+/* NEWSLETTER CSS */
+.newsletter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.card-newsletter {
+  width: 1150px;
+  max-width: 1150px;
+  padding: 4rem 0rem;
+  margin-bottom: 5rem;
+  border-radius: 40px;
+  text-align: center;
+  color: #234cad;
+  background-color: #f2f6ff;
+}
+.card-newsletter .h1-info-features {
+  font-size: 41px;
+  margin-bottom: 20px;
+}
+.p-newsletter {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+.input-newsletter {
+  width: 450px;
+  max-width: 450px;
+  padding: 20px 2rem;
+  outline: none;
+  box-sizing: border-box;
+  border: 2px solid transparent;
+  border-radius: 15px;
+  font-size: 15px;
+  color: #234cad;
+  background-color: #ffffff;
+  opacity: 0.5;
+  transition: .3s;
+}
+.input-newsletter:focus {
+  border: 2px solid #234cad;
+}
+label {
+  position: relative;
+}
+.btn-newsletter {
+  position: absolute;
+  top: -9px;
+  right: 10px;
+  height: max-content;
+  color: white;
+  background-color: #234cad;
+  border: 2px solid #234cad;
+  border-radius: 10px;
+  font-size: 35px;
+  cursor: pointer;
+  transition: .3s;
+}
+.btn-newsletter:hover {
+  color: #234cad;
+  background-color: #f2f6ff;
+  border: 2px solid #234cad;
+}
+/* END OF NEWSLETTER CSS */
+/* -------------------------------------------------------------------- */
+/* FOOTER CSS */
+.footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+  margin-bottom: 40px;
+}
+.div-footer{
+	max-width: 1170px;
+}
+.row-footer{
+	display: flex;
+	flex-wrap: wrap;
+}
+.ul-footer{
+	list-style: none;
+}
+.footer-col{
+  max-width: 300px;
+  padding: 0 60px;
+}
+.footer-col h4{
+	font-size: 26px;
+	color: #234cad;
+	text-transform: capitalize;
+	margin-bottom: 20px;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	height: 2px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #234cad;
+	text-decoration: none;
+	font-weight: 300;
+	color: #234cad;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #234cad;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+/* END OF FOOTER CSS */
